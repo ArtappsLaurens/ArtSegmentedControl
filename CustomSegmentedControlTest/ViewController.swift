@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         artSegmentedControl.options = ["First", "Second", "Third"]
-        artSegmentedControl.value = 2
+        artSegmentedControl.value = 1
         label.text = textForLabel
         //artSegmentedControl.options = ["First option", "Second option", "Third option"]
         // Do any additional setup after loading the view, typically from a nib.
