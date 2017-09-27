@@ -13,7 +13,7 @@ import UIKit
     private var selector : UIView!
     private var borderWidth : CGFloat = 1
     private var buttons : [UIButton] = []
-    var options : [String] = ["Placeholder 1", "Placeholder 2"] {
+    var options : [String] = ["Placeholder 1", "Placeholder 2", "Placeholder 3"] {
         didSet {
             updateView()
         }
