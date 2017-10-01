@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ArtSegmentedControl: UIControl {
+@IBDesignable class ArtSegmentedControl: UIControl {
 
     private var borderWidth : CGFloat = 1
     private var stackView : UIStackView!
     private var selector : UIView!
-    var options : [String] = ["Placeholder 1", "Placeholder 2", "Placeholder 3"] {
+    var options : [String] = ["Option 1", "Option 2", "Option 3"] {
         didSet {
             setButtons()
         }
