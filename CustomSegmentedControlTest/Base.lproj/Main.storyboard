@@ -25,7 +25,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTl-5A-dtE" customClass="ArtSegmentedControl" customModule="CustomSegmentedControlTest" customModuleProvider="target">
                                 <rect key="frame" x="16" y="28" width="288" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="UyM-eC-aby"/>
                                 </constraints>
