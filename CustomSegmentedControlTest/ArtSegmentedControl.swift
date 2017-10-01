@@ -38,7 +38,7 @@ class ArtSegmentedControl: UIControl {
         
     }
     
-    func placeSelector() {
+    func moveSelector() {
         let selectorX = frame.width / CGFloat(options.count) * CGFloat(value)
         UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 5, options: .curveEaseInOut, animations: {
             self.selector.frame.origin.x = selectorX
@@ -75,11 +75,11 @@ class ArtSegmentedControl: UIControl {
                 value = index
             }
         }
+        moveSelector()
     }
     
     
     func setButtons() {
-
         if(stackView != nil)
         {
             stackView.removeFromSuperview()
@@ -109,7 +109,6 @@ class ArtSegmentedControl: UIControl {
             newButton.addTarget(self, action: #selector(buttonPressed(sender:)), for: .touchUpInside)
             stackView.addArrangedSubview(newButton)
         }
-        placeSelector()
         
     }
     
