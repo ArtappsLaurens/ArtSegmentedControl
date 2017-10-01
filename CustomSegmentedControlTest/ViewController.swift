@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         artSegmentedControl.options = ["First", "Second", "Third"]
         artSegmentedControl.value = 1
         label.text = textForLabel
+        //artSegmentedControl.tintColor = .blue
         //artSegmentedControl.options = ["First option", "Second option", "Third option"]
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -25,6 +26,7 @@ class ViewController: UIViewController {
     var textForLabel : String {
         return "Selected: \(artSegmentedControl.value)"
     }
+    
     @IBAction func valueChanged(_ sender: Any) {
         label.text = textForLabel
     }
