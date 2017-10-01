@@ -47,6 +47,7 @@ class ArtSegmentedControl: UIControl {
     }
     
     func collectedInit() {
+        backgroundColor = .clear
         clipsToBounds = true
         selector = UIView(frame: CGRect.zero)
         selector.backgroundColor = tintColor
